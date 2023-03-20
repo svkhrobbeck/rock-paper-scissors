@@ -12,12 +12,34 @@
   &.hidden {
     display: none;
   }
+
+  
+  @media only screen and (max-width: $tablet) {
+    grid-gap: 57px 90px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    grid-gap: 47px 75px;
+  }
 }
 
 .game__triangle {
   position: absolute;
   z-index: -2;
-  left: calc(50% - 156.5px);
+  left: calc(50% - 152px);
+  width: 304px;
+  height: auto;
+
+  
+  @media only screen and (max-width: $tablet) {
+    width: 230px;
+    left: calc(50% - 115px);
+  }
+
+  @media only screen and (max-width: $mobile) {
+   width: 190px;
+   left: calc(50% - 95px);
+  }
 }
 
 .pick {
@@ -30,6 +52,7 @@
   position: relative;
   box-shadow: inset -1px 8px 0px 3px #f0f0f0bf;
   outline: none;
+  transition: padding .5s ease;
 
   &::after {
     content: "";
@@ -40,6 +63,30 @@
     top: -10%;
     left: -10%;
     border-radius: 50%;
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+
+    
+  @media only screen and (max-width: $tablet) {
+    width: 55px;
+    height: 55px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: 40px;
+    height: 40px;
+  }
+  }
+
+  @media only screen and (max-width: $tablet) {
+    padding: 35px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    padding: 30px;
   }
 }
 
@@ -71,10 +118,23 @@
 .game__result {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 
   &.hidden {
     display: none;
+  }
+
+  @media only screen and (max-width: $mobile) {
+   flex-wrap: wrap;
+   gap: 40px 20px;
+  }
+}
+
+.game__result-inner {
+  @media only screen and (max-width: $mobile) {
+    order: 1;
+    width: 100%;
+    text-align: center;
   }
 }
 
