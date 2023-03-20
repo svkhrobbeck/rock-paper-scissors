@@ -1,7 +1,7 @@
 /* CUSTOM PROPS */
 :root {
   --primary-bg-color: #fff;
-  --text-color: #000;
+  --text-color: #fff;
   --accent-color: ;
 }
 
@@ -38,11 +38,11 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Barlow Semi Condensed", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--primary-bg-color);
+  background: radial-gradient(circle, #1F3756   20%, #141539 95%) no-repeat center / cover fixed;
   display: flex;
   flex-direction: column;
 }
@@ -91,10 +91,14 @@ body {
   flex-grow: 1;
 }
 
-/* RETINA BGS */
-// @media only screen and (-webkit-min-device-pixel-ratio: 2),
-// only screen and (min--moz-device-pixel-ratio: 2),
-// only screen and (-o-min-device-pixel-ratio: 2/1),
-// only screen and (min-device-pixel-ratio: 2),
-// only screen and (min-resolution: 192dpi),
-// only screen and (min-resolution: 2dppx) {}
+.main-button {
+  background: transparent;
+  padding: 12px 22px;
+  border-radius: 5px;
+  border: 2px solid #fff;
+  color: var(--text-color);
+  font-size: 24px;
+  line-height: 1.2;
+  font-weight: 600;
+  text-transform: uppercase;
+}

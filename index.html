@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
+    <title>Rock Paper Scissors</title>
 
     <!-- Favicon -->
     <!-- <link rel="shortcut icon" href="images/favicon.png"> -->
@@ -15,11 +15,120 @@
   </head>
 
   <body>
+    <!-- HEADER -->
+    <header class="site-header">
+      <div class="container site-header__container">
+        <h1 class="site-header__title">ROCK<br />PAPER<br />SCISSORS</h1>
+        <div class="score">
+          <div class="score__card">
+            <p class="score__text">
+              Your Score:
+              <span class="score__text-inner" data-player-score>0</span>
+            </p>
+          </div>
+          <div class="score__card">
+            <p class="score__text">
+              Computer Score:
+              <span class="score__text-inner" data-computer-score>0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /HEADER -->
+
     <!-- MAIN CONTENT -->
-    <main class="main-content"></main>
+    <main class="main-content">
+      <section class="game container">
+        <div class="game__inner">
+          <img
+            class="game__triangle"
+            src="images/triangle.svg"
+            alt=""
+            aria-hidden="true"
+          />
+          <button class="pick pick--paper" data-pick>
+            <img
+              src="images/icon-paper.svg"
+              alt="pick paper"
+              width="70"
+              height="70"
+            />
+          </button>
+          <button class="pick pick--scissors" data-pick>
+            <img
+              src="images/icon-scissors.svg"
+              alt="pick scissors"
+              width="70"
+              height="70"
+            />
+          </button>
+          <button class="pick pick--rock" data-pick>
+            <img
+              src="images/icon-rock.svg"
+              alt="pick rock"
+              width="70"
+              height="70"
+            />
+          </button>
+        </div>
+        <div class="game__result hidden">
+          <div>
+            <img src="" alt="" data-player-result />
+          </div>
+          <div class="game__result-inner">
+            <p class="game__result-text" data-result-text>YOU LOSE</p>
+            <button
+              class="game__result-restart-btn main-button"
+              data-restart-btn
+            >
+              Play Again
+            </button>
+          </div>
+          <div>
+            <img src="" alt="" data-computer-result />
+          </div>
+        </div>
+        <button class="game__reset-score main-button" data-reset-btn>RESET SCORE</button>
+        <button
+          class="game__rules-btn main-button"
+          data-rules-btn="#rules-modal"
+        >
+          RULES
+        </button>
+        <div
+          class="game__rules-modal modal-rules"
+          id="rules-modal"
+          data-rules-modal
+        >
+          <div class="modal-rules__content">
+            <div class="modal-rules__top">
+              <p class="modal-rules__text">RULES</p>
+              <button class="modal-rules__close-btn" data-modal-close-btn>
+                <img
+                  src="images/icon-close.svg"
+                  alt=""
+                  aria-hidden="true"
+                  width="24"
+                  height="24"
+                />
+              </button>
+            </div>
+            <img
+              class="modal-rules__img"
+              src="images/game-rules.svg"
+              alt="game rules"
+              width="304"
+              height="270"
+            />
+          </div>
+        </div>
+      </section>
+    </main>
     <!-- /MAIN CONTENT -->
 
     <!-- SCRIPTS -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
+    <script src="js/rules-modal.js"></script>
   </body>
 </html>

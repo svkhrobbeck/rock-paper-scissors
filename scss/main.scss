@@ -2,7 +2,9 @@
 @import "mixins";
 @import "variables";
 @import "fonts";
-@import "common";
+@import "general";
 @import "container";
 
 // BLOCKS
+@import "blocks/header";
+@import "blocks/game";
