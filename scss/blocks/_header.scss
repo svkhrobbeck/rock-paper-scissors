@@ -1,7 +1,7 @@
 .site-header {
   padding: 45px 0;
   margin-bottom: 100px;
-  transition: padding .5s ease;
+  transition: padding 0.5s ease;
 
   @media only screen and (max-width: $desktop) {
     padding: 25px 0;
@@ -19,7 +19,7 @@
   border: 2px solid #606e85;
   border-radius: 15px;
   padding: 18px 32px;
-  transition: padding .5s ease;
+  transition: padding 0.5s ease;
 
   @media only screen and (max-width: $desktop) {
     padding: 15px 24px;
@@ -42,7 +42,7 @@
   margin: 0;
   line-height: 0.8;
   font-size: 40px;
-  transition: font-size .5s ease, line-height .5s ease;
+  transition: font-size 0.5s ease, line-height 0.5s ease;
 
   @media only screen and (max-width: $desktop) {
     font-size: 36px;
@@ -67,7 +67,7 @@
   display: flex;
   align-items: center;
   gap: 30px;
-  transition: gap .5s ease;
+  transition: gap 0.5s ease;
 
   @media only screen and (max-width: $tablet-l) {
     gap: 20px;
@@ -87,7 +87,7 @@
   border-radius: 10px;
   padding: 12px 36px;
   text-align: center;
-  transition: padding .5s ease;
+  transition: padding 0.5s ease;
 
   @media only screen and (max-width: $tablet-l) {
     padding: 10px 24px;
@@ -107,28 +107,28 @@
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
+  font-weight: 600;
 
-  span {
+  &-top {
     font-size: 16px;
-    font-weight: 600;
     white-space: nowrap;
-    transition: font-size .5s ease;
-  
+    transition: font-size 0.5s ease;
+
     @media only screen and (max-width: $tablet-l) {
       font-size: 15px;
     }
-  
+
     @media only screen and (max-width: $tablet) {
       font-size: 14px;
     }
   }
 
-  &-inner {
+  &-bottom {
     color: #3b4363;
     font-size: 55px;
     line-height: 1;
-    transition: font-size .5s ease;
-    
+    transition: font-size 0.5s ease;
+
     @media only screen and (max-width: $tablet-l) {
       font-size: 45px;
     }

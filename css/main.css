@@ -283,41 +283,41 @@ body {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
-}
-.score__text span {
-  font-size: 16px;
   font-weight: 600;
+}
+.score__text-top {
+  font-size: 16px;
   white-space: nowrap;
   transition: font-size 0.5s ease;
 }
 @media only screen and (max-width: 992px) {
-  .score__text span {
+  .score__text-top {
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .score__text span {
+  .score__text-top {
     font-size: 14px;
   }
 }
-.score__text-inner {
+.score__text-bottom {
   color: #3b4363;
   font-size: 55px;
   line-height: 1;
   transition: font-size 0.5s ease;
 }
 @media only screen and (max-width: 992px) {
-  .score__text-inner {
+  .score__text-bottom {
     font-size: 45px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .score__text-inner {
+  .score__text-bottom {
     font-size: 35px;
   }
 }
 @media only screen and (max-width: 576px) {
-  .score__text-inner {
+  .score__text-bottom {
     font-size: 32px;
   }
 }
