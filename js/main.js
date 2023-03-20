@@ -8,6 +8,12 @@ const [paper, scissors, rock] = document.querySelectorAll("[data-pick]"),
 let scorePlayer = 0,
   scoreComputer = 0;
 
+if (window.innerWidth <= 576) {
+  elScoreComputer.previousElementSibling.textContent = "Phone Score";
+} else {
+  elScoreComputer.previousElementSibling.textContent = "Computer Score";
+}
+
 document.addEventListener("click", (evt) => {
   clickPlayerChoice(evt);
   restartBtnClick(evt);

@@ -283,18 +283,20 @@ body {
   display: flex;
   flex-direction: column;
   text-transform: uppercase;
+}
+.score__text span {
   font-size: 16px;
   font-weight: 600;
   white-space: nowrap;
   transition: font-size 0.5s ease;
 }
 @media only screen and (max-width: 992px) {
-  .score__text {
+  .score__text span {
     font-size: 15px;
   }
 }
 @media only screen and (max-width: 768px) {
-  .score__text {
+  .score__text span {
     font-size: 14px;
   }
 }
