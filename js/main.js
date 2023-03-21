@@ -124,5 +124,9 @@ function resetBtnClick(evt) {
   scoreComputer = 0;
   elScorePlayer.textContent = scorePlayer;
   elScoreComputer.textContent = scoreComputer;
+  elPlayerResult.parentElement.parentElement.classList.add("hidden");
+  elPlayerResult.parentElement.parentElement.previousElementSibling.classList.remove(
+    "hidden"
+  );
   el.classList.add("hidden");
 }

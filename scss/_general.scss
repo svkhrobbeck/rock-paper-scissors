@@ -54,24 +54,6 @@ body {
   }
 }
 
-::-webkit-scrollbar-track {
-  @media only screen and (min-width: $tablet) {
-    border-radius: 8px;
-    box-shadow: inset 0 0 5px grey;
-  }
-}
-
-::-webkit-scrollbar-thumb {
-  @media only screen and (min-width: $tablet) {
-    background: rgb(110, 110, 110);
-    border-radius: 10px;
-
-    &:hover {
-      background: rgb(110, 110, 110);
-    }
-  }
-}
-
 /* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;

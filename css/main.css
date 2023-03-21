@@ -83,23 +83,6 @@ body {
   }
 }
 
-@media only screen and (min-width: 768px) {
-  ::-webkit-scrollbar-track {
-    border-radius: 8px;
-    box-shadow: inset 0 0 5px grey;
-  }
-}
-
-@media only screen and (min-width: 768px) {
-  ::-webkit-scrollbar-thumb {
-    background: rgb(110, 110, 110);
-    border-radius: 10px;
-  }
-  ::-webkit-scrollbar-thumb:hover {
-    background: rgb(110, 110, 110);
-  }
-}
-
 /* VISUALLY HIDDEN */
 .visually-hidden {
   position: absolute;
@@ -350,6 +333,9 @@ body {
   left: calc(50% - 152px);
   width: 304px;
   height: auto;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media only screen and (max-width: 768px) {
   .game__triangle {
@@ -389,6 +375,9 @@ body {
 .pick img {
   width: 70px;
   height: 70px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
 }
 @media only screen and (max-width: 768px) {
   .pick img {
