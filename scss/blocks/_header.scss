@@ -38,6 +38,11 @@
   }
 }
 
+.site-header__link {
+  display: flex;
+  color: var(--text-color);
+}
+
 .site-header__title {
   margin: 0;
   line-height: 0.8;
